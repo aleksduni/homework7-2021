@@ -27,7 +27,7 @@ document.querySelector('#faster').addEventListener('click', function() { //faste
 });
 
 document.querySelector('#skip').addEventListener('click', function() { //skip
-	console.log('Original location:' + video.currentTime); 
+	console.log('Original video time:' + video.currentTime); 
 	if (video.currentTime < video.duration-15) {
 		video.currentTime += 15; 
 	}
@@ -37,7 +37,7 @@ document.querySelector('#skip').addEventListener('click', function() { //skip
 	}
 
 	video.play();
-	console.log('Video time:' + video.currentTime); 
+	console.log('New video time:' + video.currentTime); 
 });
 
 document.querySelector('#mute').addEventListener('click', function() { //mute-unmute
